@@ -9,6 +9,6 @@ FROM ubuntu:22.04
 WORKDIR /app/
 COPY --from=0 /app/dist/app ./
 EXPOSE 5000
-RUN [ "chmod", "+x", "./app" ]
+RUN [ "/bin/chmod", "+x", "./app" ]
 CMD [ "./app" ]
 
