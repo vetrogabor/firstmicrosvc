@@ -16,7 +16,7 @@ def add_numbers():
     except:
         server_ip = 'unknown'
 
-    # Create a JSON response containing both IPs
+    # Create a JSON response
     return jsonify({
         "client_ip": request.remote_addr,
         "server_ip": server_ip,
